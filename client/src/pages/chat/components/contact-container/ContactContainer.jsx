@@ -103,7 +103,7 @@ const Logo = () => {
           fill="#F5E1DA"
         ></path>{" "}
       </svg>
-      <span className="text-3xl font-medium font-serif text-[#e9e1de]">Syncronus</span>
+      <span className="text-3xl font-medium font-serif text-[#e9e1de]">Synchronous</span>
     </div>
   );
 };
