@@ -42,6 +42,9 @@ const server = app.listen(port, ()=>{
 setupSocket(server)
 
 mongoose
-.connect(process.env.DATABASE_URL || "mongodb://localhost:27017/chat_app")
+.connect(process.env.DATABASE_URL || "mongodb://localhost:27017/chat_app", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
   .then(() => console.log("✅ MongoDB Connected"))
   .catch((err) => console.error("❌ MongoDB Connection Error:", err));
