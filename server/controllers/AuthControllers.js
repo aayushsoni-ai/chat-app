@@ -11,8 +11,6 @@ cloudinary.config({
     api_key: "244848338474611",
     api_secret: "m8HLa4akMh1uoDc3C8_W1Nm9edk"
 });
-
-console.log('name',process.env.CLOUDINARY_CLOUD_NAME)
 const maxAge = 3 * 24 * 60 * 60 * 1000;
 
 const createToken = (email, userId) => {
